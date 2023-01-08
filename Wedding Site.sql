@@ -1,4 +1,3 @@
-CREATE SCHEMA `steps`;
 
 CREATE TABLE `guests` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -64,7 +63,7 @@ CREATE TABLE `steps` (
   `parent` varchar(255)
 );
 
-CREATE TABLE `steps`.`guest_type` (
+CREATE TABLE `steps_guest_type` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `step` int,
   `guest_type` int
@@ -80,6 +79,6 @@ ALTER TABLE `activity_responses` ADD FOREIGN KEY (`guest_id`) REFERENCES `guests
 
 ALTER TABLE `activity_responses` ADD FOREIGN KEY (`task`) REFERENCES `activity` (`id`);
 
-ALTER TABLE `steps`.`guest_type` ADD FOREIGN KEY (`step`) REFERENCES `steps` (`id`);
+ALTER TABLE `steps_guest_type` ADD FOREIGN KEY (`step`) REFERENCES `steps` (`id`);
 
-ALTER TABLE `steps`.`guest_type` ADD FOREIGN KEY (`guest_type`) REFERENCES `guest_type` (`id`);
+ALTER TABLE `steps_guest_type` ADD FOREIGN KEY (`guest_type`) REFERENCES `guest_type` (`id`);
