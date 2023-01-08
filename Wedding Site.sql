@@ -3,7 +3,7 @@ CREATE SCHEMA `steps`;
 CREATE TABLE `guests` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(255),
-  `guest_type_id` varchar(255),
+  `guest_type_id` int,
   `invited_guests` int,
   `email` varchar(255),
   `login_code` varchar(255)
