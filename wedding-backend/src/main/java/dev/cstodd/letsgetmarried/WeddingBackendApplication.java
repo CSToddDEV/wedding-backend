@@ -1,4 +1,4 @@
-package dev.cstodd.letsgetmarried.weddingbackend;
+package dev.cstodd.letsgetmarried;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

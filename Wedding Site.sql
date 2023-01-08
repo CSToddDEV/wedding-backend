@@ -67,7 +67,7 @@ CREATE TABLE `steps_guest_type` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `step` int,
   `guest_type` int
-);
+);guest_type
 
 ALTER TABLE `guests` ADD FOREIGN KEY (`guest_type_id`) REFERENCES `guest_type` (`id`);
 
